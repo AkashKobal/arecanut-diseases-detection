@@ -1,1 +1,1 @@
-# krrishai
+# Arecanut Diseases Detection
