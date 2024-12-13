@@ -1,0 +1,165 @@
+/* Fonts */
+:root {
+    --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    --heading-font: "Nunito",  sans-serif !important;
+    --nav-font: "Inter",  sans-serif !important;
+  }
+  
+  /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+  :root { 
+    --background-color: #ffffff !important; /* Background color for the entire website, including individual sections */
+    --default-color: #212529 !important; /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #2d465e !important; /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #269b24 !important; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff !important; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #ffffff !important; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  }
+  
+  /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+  :root {
+    --nav-color: #212529 !important;  /* The default color of the main navmenu links */
+    --nav-hover-color: #269b24 !important; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-mobile-background-color: #ffffff !important; /* Used as the background color for mobile navigation menu */
+    --nav-dropdown-background-color: #ffffff !important; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-dropdown-color: #212529 !important; /* Used for navigation links of the dropdown items in the navigation menu. */
+    --nav-dropdown-hover-color: #269b24 !important; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  }
+  
+  /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+  
+  .light-background {
+    --background-color: #f3f9ff !important;
+    --surface-color: #ffffff !important;
+  }
+  
+  .dark-background {
+    --background-color: #269b24 !important;
+    --default-color: #ffffff !important;
+    --heading-color: #ffffff !important;
+    --surface-color: #269b24 !important;
+    --contrast-color: #ffffff !important;
+  }
+  
+  /* Smooth scroll */
+  :root {
+    scroll-behavior: smooth !important;
+  }
+  
+
+/*--------------------------------------------------------------
+# Global componentFooter
+--------------------------------------------------------------*/
+.componentFooter {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .componentFooter .componentFooter-top {
+    padding-top: 50px;
+  }
+  
+  .componentFooter .componentFooter-about .logo {
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+  
+  .componentFooter .componentFooter-about .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+  }
+  
+  .componentFooter .componentFooter-about .logo span {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .componentFooter .componentFooter-about p {
+    font-size: 14px;
+    font-family: var(--heading-font);
+  }
+  
+  .componentFooter .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 16px;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .componentFooter .social-links a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+  .componentFooter h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  .componentFooter .componentFooter-links {
+    margin-bottom: 30px;
+  }
+  
+  .componentFooter .componentFooter-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .componentFooter .componentFooter-links ul i {
+    padding-right: 2px;
+    font-size: 12px;
+    line-height: 0;
+  }
+  
+  .componentFooter .componentFooter-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .componentFooter .componentFooter-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  .componentFooter .componentFooter-links ul a {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .componentFooter .componentFooter-links ul a:hover {
+    color: var(--accent-color);
+  }
+  
+  .componentFooter .componentFooter-contact p {
+    margin-bottom: 5px;
+  }
+  
+  .componentFooter .copyright {
+    padding: 25px 0;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+  
+  .componentFooter .copyright p {
+    margin-bottom: 0;
+  }
+  
+  .componentFooter .credits {
+    margin-top: 8px;
+    font-size: 13px;
+  }
+  

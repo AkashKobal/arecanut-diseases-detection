@@ -1,10 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import { ImageUpload } from './home';
+import { Routes, Route } from "react-router-dom";
+import Report from './Components/Report'
 
 function App() {
   return (
-  <ImageUpload />
+      <Routes>
+        <Route path="/" element={<ImageUpload />}>
+          <Route path="/report" element={<Report />} />
+        </Route>
+      </Routes>
   );
 }
 
